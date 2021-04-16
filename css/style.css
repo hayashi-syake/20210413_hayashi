@@ -26,7 +26,7 @@ a {
   position: relative;
 }
 .eyecatch-img-container {
-  margin: 10px 0 0 auto;
+  margin: 10px auto;
 }
 .eyecatch-img {
   margin: 0 0 0 auto;
@@ -84,11 +84,19 @@ a {
   color: slategray;
 }
 
-.news {
-  margin: 50px 300px 50px 300px;
+.news-grid {
+  display: grid;
+  grid-template-rows: 50px 80px 300px 50px;
+  grid-template-columns: 2fr 3fr 2fr;
+  justify-content: center;
 }
-.news-ttl {
-  margin-bottom: 30px;
+.news-box1 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.news-box2 {
+  grid-row: 3/4;
+  grid-column: 2/3;
 }
 .news-list li:first-child {
   border-top: 3px solid slategray;
@@ -97,7 +105,6 @@ a {
 .news-list li:last-child {
   border-bottom: 3px solid slategray;
   width: 600px;
-  margin-bottom: 30px;
 }
 .news-list li {
   border-bottom: 1px solid slategray;
@@ -210,7 +217,6 @@ a {
   grid-row: 2/3;
   padding: 0 70px;
 }
-
 .service-box3 {
   grid-row: 3/4;
   grid-column: 3/4;
@@ -236,7 +242,6 @@ a {
   padding: 0 10px;
   line-height: 170%;
 }
-
 .service-box4 {
   grid-row: 4/5;
   grid-column: 3/4;
@@ -335,32 +340,40 @@ a {
   margin: 20px auto;
 }
 
-.company {
-  margin: 40px;
+.company-grid {
+  display: grid;
+  grid-template-rows: 50px 80px 280px 50px;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-content: center;
+}
+.company-box1 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.company-box2 {
+  grid-row: 3/4;
+  grid-column: 2/3;
 }
 .company-font,
 .company-ttl {
   line-height: 110%;
-  margin-left: 270px;
 }
 table {
   border: 1px solid darkgray;
   border-collapse: collapse;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 th {
   background: whitesmoke;
   border: 1px solid darkgray;
   padding: 15px;
   text-align: left;
-  padding-inline-start: 10px;
-  padding-inline-end: 100px;
+  width: 300px;
 }
 td {
   padding: 15px;
   border: 1px solid darkgray;
-  padding-inline-start: 10px;
-  padding-inline-end: 300px;
+  width: 600px;
 }
 
 .imag {
